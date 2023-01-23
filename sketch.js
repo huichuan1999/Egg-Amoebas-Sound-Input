@@ -17,12 +17,12 @@ let zoff = 0;
 let noiseCircles = [];
 
 function setup() {
-  createCanvas(1920, 1080);
+  createCanvas(windowWidth, windowHeight);
 
   mic = new p5.AudioIn();
   mic.start();
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 25; i++) {
     let x = random(width);
     let y = random(height);
     let r1 = random(0.2, 1.2);
